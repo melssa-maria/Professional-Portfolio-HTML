@@ -1,229 +1,231 @@
-/* =========================
-   RESET & BASE STYLES
-========================= */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2f6b3d;
+    --primary-dark: #244f2d;
+    --background: #f5f7f5;
+    --surface: #ffffff;
+    --border: #d6ddd6;
+    --text: #222222;
+    --muted: #5b665d;
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f4f6f9;
-    color: #333;
 }
 
-/* =========================
-   HEADER
-========================= */
-header {
-    background: #111827;
-    color: #fff;
-    padding: 25px 20px;
+.site-header {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 1.75rem 1rem;
     text-align: center;
 }
 
-header h1 {
-    margin-bottom: 10px;
-    font-size: 28px;
+.site-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.35rem;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-nav ul {
+.tagline {
+    color: #eef7ef;
+    margin-bottom: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
     list-style: none;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav a {
-    color: #d1d5db;
+.nav-list a {
+    color: #ffffff;
+    padding: 0.35rem 0.7rem;
     text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
 }
 
-nav a:hover {
-    color: #60a5fa;
-}
-
-nav a.active {
-    color: #60a5fa;
-    border-bottom: 2px solid #60a5fa;
-    padding-bottom: 3px;
-}
-
-/* =========================
-   MAIN LAYOUT
-========================= */
-main {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 20px;
-}
-
-/* =========================
-   CONTENT CARDS
-========================= */
-section, article, aside {
-    background: #ffffff;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
-}
-
-section:hover, article:hover, aside:hover {
-    transform: translateY(-3px);
-}
-
-/* =========================
-   TYPOGRAPHY
-========================= */
-h1, h2, h3 {
-    margin-bottom: 12px;
-    color: #111827;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-/* =========================
-   GALLERY
-========================= */
-figure {
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-figcaption {
-    margin-top: 8px;
-    font-style: italic;
-    color: #555;
-}
-
-/* =========================
-   VIDEO
-========================= */
-video {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* =========================
-   TABLE STYLING
-========================= */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-thead {
-    background: #1f2937;
-    color: white;
-}
-
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-tbody tr:nth-child(even) {
-    background: #f9fafb;
-}
-
-tbody tr:hover {
-    background: #eef2ff;
-}
-
-tfoot {
-    background: #e5e7eb;
-    font-style: italic;
-}
-
-/* =========================
-   FORM
-========================= */
-form {
-    max-width: 600px;
-}
-
-label {
-    font-weight: 600;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    transition: border 0.3s ease;
-}
-
-input:focus, textarea:focus {
-    border-color: #2563eb;
+.nav-list a:hover,
+.nav-list a:focus-visible,
+.nav-list a.active {
+    background-color: var(--primary-dark);
+    border-radius: 4px;
     outline: none;
 }
 
-/* Button */
-button {
-    background: #2563eb;
-    color: white;
-    padding: 12px 18px;
-    border: none;
+.page-shell {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 1.5rem 1rem 2rem;
+}
+
+section,
+article,
+aside {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 6px;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    color: var(--primary);
+    margin-bottom: 0.6rem;
+}
+
+p,
+li,
+dd,
+td,
+th,
+label {
+    color: var(--text);
+}
+
+ul,
+ol {
+    margin-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+dt {
+    color: var(--primary);
+    font-weight: bold;
+    margin-top: 0.75rem;
+}
+
+dd {
+    margin-left: 0;
+}
+
+figure {
+    margin-top: 1rem;
+}
+
+img,
+object,
+video {
+    border: 1px solid var(--border);
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+figcaption {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+caption {
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+thead th {
+    background-color: #e8efe8;
+}
+
+tfoot td {
+    background-color: #f1f4f1;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+textarea {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary);
+    outline: 2px solid #dcebdd;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
     cursor: pointer;
-    font-size: 15px;
-    transition: 0.3s ease;
+    padding: 0.7rem 1rem;
 }
 
-button:hover {
-    background: #1e40af;
+button:hover,
+button:focus-visible {
+    background-color: var(--primary-dark);
+    outline: none;
 }
 
-/* =========================
-   FOOTER
-========================= */
-footer {
+.site-footer {
+    background-color: #e8efe8;
+    border-top: 1px solid var(--border);
+    padding: 1rem;
     text-align: center;
-    padding: 20px;
-    background: #111827;
-    color: white;
-    margin-top: 30px;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+@media (max-width: 700px) {
+    .site-header h1 {
+        font-size: 1.7rem;
     }
 
-    main {
-        padding: 15px;
+    .nav-list {
+        flex-direction: column;
+        gap: 0.4rem;
     }
 
-    section, article, aside {
-        padding: 20px;
+    .page-shell {
+        padding-top: 1rem;
     }
 }

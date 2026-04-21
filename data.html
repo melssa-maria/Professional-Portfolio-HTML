@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data | Mafene Portfolio</title>
+    <meta name="description" content="Data page containing a simple skill proficiency table for Melissa's portfolio.">
+    <title>Data | Melissa Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Data & Skills</h1>
-        <nav>
-            <ul>
+    <header class="site-header">
+        <h1>Data and Skills</h1>
+        <p class="tagline">A simple summary of my current web development skills.</p>
+        <nav aria-label="Primary navigation">
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="data.html">Data</a></li>
+                <li><a class="active" href="data.html" aria-current="page">Data</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="page-shell">
         <section>
             <h2>Skill Proficiency</h2>
-
-            <!-- Table -->
-            <table border="1">
+            <table>
+                <caption>My current skill levels in key web development areas.</caption>
                 <thead>
                     <tr>
                         <th scope="col">Skill</th>
@@ -34,38 +34,34 @@
                         <th scope="col">Experience</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
-                        <td>HTML</td>
+                        <th scope="row">HTML</th>
                         <td>Advanced</td>
                         <td>2 Years</td>
                     </tr>
                     <tr>
-                        <td>CSS</td>
+                        <th scope="row">CSS</th>
                         <td>Intermediate</td>
                         <td>1.5 Years</td>
                     </tr>
                     <tr>
-                        <td>JavaScript</td>
+                        <th scope="row">JavaScript</th>
                         <td>Beginner</td>
                         <td>1 Year</td>
                     </tr>
                 </tbody>
-
                 <tfoot>
                     <tr>
-                        <td colspan="3">Continuously improving skills</td>
+                        <td colspan="3">I am still improving my skills through practice and coursework.</td>
                     </tr>
                 </tfoot>
             </table>
-
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mafene</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Melissa. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

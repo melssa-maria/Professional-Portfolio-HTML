@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Mafene Portfolio</title>
+    <meta name="description" content="Professional portfolio home page for Melissa, an aspiring web developer focused on accessible and semantic web design.">
+    <title>Home | Melissa Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Mafene - Professional Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+    <!-- Site header introduces the portfolio identity and primary navigation. -->
+    <header class="site-header">
+        <h1>Melissa Professional Portfolio</h1>
+        <p class="tagline">Student, aspiring web developer, and accessibility-minded creator.</p>
+        <nav aria-label="Primary navigation">
+            <ul class="nav-list">
+                <li><a class="active" href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="data.html">Data</a></li>
@@ -22,27 +23,36 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
+    <!-- Main content uses article and aside to separate the core profile from supporting highlights. -->
+    <main class="page-shell">
         <article>
-            <h2>Welcome</h2>
+            <h2>Professional Identity</h2>
             <p>
-                Hello! I am Mafene, an aspiring web developer passionate about building
-                accessible and user-friendly websites. This portfolio showcases my
-                skills, projects, and academic journey.
+                I am Melissa, an aspiring web developer who enjoys building clear, user-friendly,
+                and accessible web experiences. This portfolio presents my background, sample
+                project media, skill data, and a simple contact form using semantic HTML5.
+            </p>
+            <p>
+                My current goals are to strengthen my front-end development skills, collaborate on
+                meaningful digital products, and keep improving how I design for both usability and
+                accessibility from the start of each project.
             </p>
         </article>
 
+        <!-- Aside provides quick supporting facts without interrupting the main introduction. -->
         <aside>
-            <h3>Quick Info</h3>
-            <p>Student | Web Developer | Tech Enthusiast</p>
+            <h2>Profile Snapshot</h2>
+            <ul>
+                <li>Focused on semantic HTML5 structure</li>
+                <li>Practising responsive layout techniques</li>
+                <li>Interested in clean design and web accessibility</li>
+            </ul>
         </aside>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Mafene. All rights reserved.</p>
+    <!-- Footer closes the page with ownership information. -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Melissa. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

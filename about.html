@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Mafene Portfolio</title>
+    <meta name="description" content="Biography page describing Melissa's career milestones and technical terminology.">
+    <title>About | Melissa Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>About Me</h1>
-        <nav>
-            <ul>
+    <!-- Consistent navigation helps users move through the five-page portfolio easily. -->
+    <header class="site-header">
+        <h1>About Melissa</h1>
+        <p class="tagline">Background, growth milestones, and web development terminology.</p>
+        <nav aria-label="Primary navigation">
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="about.html" aria-current="page">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="data.html">Data</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -21,40 +23,42 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Career Milestones</h2>
-            <!-- Ordered List -->
-            <ol>
-                <li>Started learning HTML and CSS</li>
-                <li>Built first personal website</li>
-                <li>Learned Git and GitHub</li>
-                <li>Developed portfolio projects</li>
-            </ol>
-        </section>
+    <main class="page-shell">
+        <article>
+            <!-- Ordered list is used because the milestones are best understood in sequence. -->
+            <section>
+                <h2>Career Milestones</h2>
+                <ol>
+                    <li>Started learning the basics of HTML, CSS, and page structure.</li>
+                    <li>Built a first personal website to practise semantic markup.</li>
+                    <li>Learned Git and GitHub for version control and collaboration.</li>
+                    <li>Improved responsive design skills through portfolio exercises.</li>
+                    <li>Began organising projects with accessibility and content structure in mind.</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Technical Terms</h2>
-            <!-- Description List -->
-            <dl>
-                <dt>HTML</dt>
-                <dd>Standard language for creating web pages</dd>
+            <!-- Description list pairs each technical term with a concise explanation for clarity. -->
+            <section>
+                <h2>Technical Terminology</h2>
+                <dl>
+                    <dt>Semantic HTML</dt>
+                    <dd>Using meaningful elements like <code>&lt;article&gt;</code> and <code>&lt;nav&gt;</code> to describe page structure.</dd>
 
-                <dt>CSS</dt>
-                <dd>Used for styling and layout of web pages</dd>
+                    <dt>Accessibility</dt>
+                    <dd>Designing content so it can be used by people with different needs, devices, and assistive technologies.</dd>
 
-                <dt>Git</dt>
-                <dd>Version control system for tracking changes</dd>
+                    <dt>Responsive Design</dt>
+                    <dd>Adapting layout and content so a page remains usable on phones, tablets, and desktops.</dd>
 
-                <dt>Responsive Design</dt>
-                <dd>Design approach for different screen sizes</dd>
-            </dl>
-        </section>
+                    <dt>Version Control</dt>
+                    <dd>Tracking and managing changes to project files using tools such as Git.</dd>
+                </dl>
+            </section>
+        </article>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mafene</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Melissa. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

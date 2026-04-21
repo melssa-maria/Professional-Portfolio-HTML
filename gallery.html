@@ -3,61 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Mafene Portfolio</title>
+    <meta name="description" content="Gallery page with accessible project visuals and an embedded design document object.">
+    <title>Gallery | Melissa Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Gallery</h1>
-        <nav>
-            <ul>
+    <header class="site-header">
+        <h1>Project Gallery</h1>
+        <p class="tagline">Selected visuals showing web design practice and planning work.</p>
+        <nav aria-label="Primary navigation">
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="active" href="gallery.html" aria-current="page">Gallery</a></li>
                 <li><a href="data.html">Data</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="page-shell">
         <section>
-            <h2>My Work</h2>
+            <h2>Portfolio Media</h2>
+            <p>This gallery uses figures and captions so each visual has clear context for all users.</p>
 
-            <!-- Image 1 -->
             <figure>
-                <img src="images/project1.jpg" alt="Screenshot of first web project" width="300">
-                <figcaption>First Website Project</figcaption>
+                <img src="images/project-home.svg" alt="Illustrated homepage mockup with a green banner, profile section, and supporting sidebar content.">
+                <figcaption>Homepage concept showing a semantic header, article content, and supporting aside.</figcaption>
             </figure>
 
-            <!-- Image 2 -->
             <figure>
-                <img src="images/project2.jpg" alt="Responsive web design layout" width="300">
-                <figcaption>Responsive Design Layout</figcaption>
+                <img src="images/project-gallery.svg" alt="Illustrated gallery layout featuring three framed project cards and a media preview panel.">
+                <figcaption>Gallery layout study focused on structured media presentation and descriptive captions.</figcaption>
             </figure>
 
-            <!-- Image 3 -->
             <figure>
-                <img src="images/project3.jpg" alt="Portfolio website design" width="300">
-                <figcaption>Portfolio Design</figcaption>
+                <img src="images/project-data.svg" alt="Illustrated dashboard-style table showing skill categories, proficiency levels, and progress markers.">
+                <figcaption>Data page concept demonstrating organised information through accessible tabular content.</figcaption>
             </figure>
-
         </section>
 
         <section>
-            <h2>Video</h2>
-            <!-- Video -->
-            <video width="400" controls>
-                <source src="videos/demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <h2>Embedded Design Document</h2>
+            <p>The assignment design document is included below as an embedded object.</p>
+            <object data="designs/etivity3-design.svg" type="image/svg+xml" width="100%" height="520" aria-label="Embedded sitemap and wireframe design document for the portfolio website">
+                <p>Your browser cannot display the design document. Open it directly here: <a href="designs/etivity3-design.svg">Portfolio design document</a>.</p>
+            </object>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mafene</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Melissa. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
