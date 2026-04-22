@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Shared navigation supports orientation and makes it easy to move between related portfolio pages. -->
     <header class="site-header">
         <h1>Data and Skills</h1>
         <p class="tagline">A simple summary of my current web development skills.</p>
@@ -23,10 +24,12 @@
     </header>
 
     <main class="page-shell">
+        <!-- A structured table is used for this data so row and column relationships are clear to all users. -->
         <section>
             <h2>Skill Proficiency</h2>
             <table>
                 <caption>My current skill levels in key web development areas.</caption>
+                <!-- Table head identifies the meaning of each column before the body data begins. -->
                 <thead>
                     <tr>
                         <th scope="col">Skill</th>
@@ -34,6 +37,7 @@
                         <th scope="col">Experience</th>
                     </tr>
                 </thead>
+                <!-- Row headers use scope='row' to improve accessibility for screen reader navigation. -->
                 <tbody>
                     <tr>
                         <th scope="row">HTML</th>
@@ -51,6 +55,7 @@
                         <td>1 Year</td>
                     </tr>
                 </tbody>
+                <!-- Table footer summarizes the dataset without interrupting the main body rows. -->
                 <tfoot>
                     <tr>
                         <td colspan="3">I am still improving my skills through practice and coursework.</td>
@@ -60,6 +65,7 @@
         </section>
     </main>
 
+    <!-- Footer closes the page with consistent portfolio ownership details. -->
     <footer class="site-footer">
         <p>&copy; 2026 Melissa. All rights reserved.</p>
     </footer>
